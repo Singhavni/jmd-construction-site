@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jai Mata Dee Construction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>WELCOME TO JAI MATA DEE CONSTRUCTION</h1>
+        <img src="https://assets.onecompiler.app/42rpngju4/42s8nbu76/logo.jpg" alt="Company Photo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="javascript:void(0);" onclick="toggleSection('about-us-content')">About Us</a></li>
+            <li><a href="javascript:void(0);" onclick="toggleSection('contact-us-content')">Contact Us</a></li>
+            <li><a href="javascript:void(0);" onclick="toggleSection('works-completed-content')">Works Completed</a></li>
+            <li><a href="javascript:void(0);" onclick="toggleSection('turnovers-content')">Turnovers</a></li>
+            <li><a href="javascript:void(0);" onclick="toggleSection('ongoing-projects-content')">Ongoing Projects</a></li>
+        </ul>
+    </nav>
+
+    <section id="about-us" class="collapsible">
+        <div class="collapsible-header">About Us</div>
+        <div id="about-us-content" class="collapsible-content">
+            <p>the company was established in 2004. the office is located in Shivpuri Nagar, Kathal more (Argora) Ranchi Jharkhand. The owner of this company is Mr. Sanjay Kumar Singh. This is a road construction based company. We have been awarded by NHAI and IOCL. We have successful projects running in Jharkhand. Our main line of business remains construction and maintenance of State and National Highways. Role of our Company shall be to undertake engineering, design, and construction and operations work during these projects. Our primary goal is to give world-class roads to the people in our society.</p>
+            <div class="gallery">
+                <img src="https://assets.onecompiler.app/42rpngju4/42rpk28x2/photo%202.jpg" alt="About Us Photo 1">
+                <img src="https://assets.onecompiler.app/42rpngju4/42rpk28x2/photo%203.jpg" alt="About Us Photo 2">
+                <img src="https://assets.onecompiler.app/42rpngju4/42rvk3656/aaj.jpeg" alt="About Us Photo 3">
+                <img src="https://assets.onecompiler.app/42rpngju4/42rvk3656/aaj.jpeg" alt="About Us Photo 4">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-us" class="collapsible">
+        <div class="collapsible-header">Contact Us</div>
+        <div id="contact-us-content" class="collapsible-content">
+            <p>Our mail: <a href="mailto:Rnc.sanjaysingh001@gmail.com">Rnc.sanjaysingh001@gmail.com</a></p>
+        </div>
+    </section>
+
+    <section id="works-completed" class="collapsible">
+        <div class="collapsible-header">Works Completed</div>
+        <div id="works-completed-content" class="collapsible-content">
+            <p>We have successfully completed many projects to date. We have been awarded by IOCL for best consumer customers(2000-2004) in Jharkhand. We are open to many new opportunities.</p>
+            <div class="gallery">
+                <img src="https://assets.onecompiler.app/42rpngju4/42rpk28x2/photo%202.jpg" alt="Completed Project 1">
+                <img src="https://assets.onecompiler.app/42rpngju4/42rpk28x2/photo%203.jpg" alt="Completed Project 2">
+                <img src="https://assets.onecompiler.app/42rpngju4/42rvk3656/aaj.jpeg" alt="Completed Project 3">
+                <img src="https://assets.onecompiler.app/42rpngju4/42rpv9vqm/nice%202.jpg" alt="Completed Project 4">
+            </div>
+        </div>
+    </section>
+
+    <section id="turnovers" class="collapsible">
+        <div class="collapsible-header">Turnovers</div>
+        <div id="turnovers-content" class="collapsible-content">
+            <ul>
+                <li>Year 2021-22: Rs 812,154,569.78</li>
+                <li>Year 2022-23: Rs 757,657,455.32</li>
+                <li>Year 2023-24: Rs 906,524,277.63</li>
+            </ul>
+            <img src="https://assets.onecompiler.app/42rpngju4/42s6re9sv/work%20done%20yet.jpg" alt="Turnovers Photo">
+        </div>
+    </section>
+
+    <section id="ongoing-projects" class="collapsible">
+        <div class="collapsible-header">Ongoing Projects</div>
+        <div id="ongoing-projects-content" class="collapsible-content">
+            <p>Our ongoing projects are in Ramgarh (Jharkhand) and Odisha (West Bengal). We have 100-150 workers helping us with these projects.</p>
+            <div class="gallery">
+                <img src="https://assets.onecompiler.app/42rpngju4/42s6re9sv/ongoing.jpg" alt="Ongoing Project 1">
+                <img src="https://assets.onecompiler.app/42rpngju4/42s6re9sv/ongoing%202.jpg" alt="Ongoing Project 2">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Jai Mata Dee Construction. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let currentOpenSection = null;
+
+        function toggleSection(sectionId) {
+            const content = document.getElementById(sectionId);
+
+            if (currentOpenSection && currentOpenSection !== content) {
+                currentOpenSection.style.display = "none";
+            }
+
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                currentOpenSection = null;
+            } else {
+                content.style.display = "block";
+                currentOpenSection = content;
+            }
+        }
+    </script>
+</body>
+</html>
